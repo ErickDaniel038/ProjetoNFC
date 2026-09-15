@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para o meu amor ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Tela inicial */
+
+        .inicio h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .inicio p {
+            font-size: 20px;
+            max-width: 500px;
+            line-height: 1.6;
+        }
+
+        .coracao {
+            font-size: 80px;
+            animation: bater 1s infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes bater {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* Botões */
+
+        .botao {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 30px;
+            background: white;
+            color: #ff4f81;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            transform: scale(1.05);
+        }
+
+        /* Carta */
+
+        .carta {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 650px;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        /* Contador */
+
+        .contador {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tempo {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            min-width: 100px;
+        }
+
+        .tempo span {
+            display: block;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        /* Motivos */
+
+        .motivos {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .motivo {
+            background: white;
+            color: #ff4f81;
+            padding: 18px;
+            margin: 12px 0;
+            border-radius: 15px;
+            font-size: 17px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Fotos */
+
+        .fotos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .fotos img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Música */
+
+        .musica {
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 500px;
+        }
+
+        /* Surpresa */
+
+        #surpresa {
+            display: none;
+            margin-top: 25px;
+            font-size: 24px;
+            font-weight: bold;
+            animation: aparecer 1s;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Corações */
+
+        .heart {
+            position: fixed;
+            bottom: -20px;
+            font-size: 20px;
+            animation: subir 6s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes subir {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        footer {
+            padding: 30px;
+            background: rgba(0,0,0,0.15);
+        }
+
+        @media (max-width: 600px) {
+
+            .inicio h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            .fotos {
+                grid-template-columns: 1fr;
+            }
+
+            .fotos img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- INÍCIO -->
+
+    <section class="inicio">
+
+        <div class="coracao">❤️</div>
+
+        <h1>Para o amor da minha vida</h1>
+
+        <p>
+            Se você chegou até aqui, é porque alguém preparou
+            uma pequena surpresa especialmente para você.
+        </p>
+
+        <a href="#carta" class="botao">
+            Abrir minha surpresa 💌
+        </a>
+
+    </section>
+
+
+    <!-- CARTA -->
+
+    <section id="carta">
+
+        <h2>💌 Uma carta para você</h2>
+
+        <div class="carta">
+
+            <p>
+                Meu amor,
+            </p>
+
+            <br>
+
+            <p>
+                Eu poderia escrever milhares de palavras para tentar
+                explicar o quanto você é importante para mim,
+                mas ainda assim pareceria pouco.
+            </p>
+
+            <br>
+
+            <p>
+                Desde que você entrou na minha vida, muitos momentos
+                ficaram mais especiais. Seu sorriso, seu jeito,
+                nossas conversas e até as pequenas coisas passaram
+                a ter um significado diferente.
+            </p>
+
+            <br>
+
+            <p>
+                Quero continuar vivendo muitos momentos ao seu lado,
+                criando novas histórias, novas lembranças e muitos
+                motivos para sorrirmos juntos.
+            </p>
+
+            <br>
+
+            <p>
+                Eu te amo hoje, amanhã e em todos os dias que ainda
+                teremos pela frente. ❤️
+            </p>
+
+            <br>
+
+            <p>
+                Com amor,<br>
+                <strong>Seu amor ❤️</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTADOR -->
+
+    <section>
+
+        <h2>⏳ Nosso tempo juntos</h2>
+
+        <p style="margin-bottom: 30px;">
+            E que venham muitos outros momentos...
+        </p>
+
+        <div class="contador">
+
+            <div class="tempo">
+                <span id="dias">0</span>
+                Dias
+            </div>
+
+            <div class="tempo">
+                <span id="horas">0</span>
+                Horas
+            </div>
+
+            <div class="tempo">
+                <span id="minutos">0</span>
+                Minutos
+            </div>
+
+            <div class="tempo">
+                <span id="segundos">0</span>
+                Segundos
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOTOS -->
+
+    <section>
+
+        <h2>📸 Nossas lembranças</h2>
+
+        <div class="fotos">
+
+            <!-- Troque as imagens pelos links das suas fotos -->
+
+            <img src="foto1.jpg" alt="Nossa foto">
+
+            <img src="foto2.jpg" alt="Nossa foto">
+
+            <img src="foto3.jpg" alt="Nossa foto">
+
+            <img src="foto4.jpg" alt="Nossa foto">
+
+        </div>
+
+    </section>
+
+
+    <!-- MÚSICA -->
+
+    <section>
+
+        <h2>🎵 Nossa música</h2>
+
+        <div class="musica">
+
+            <p>
+                Porque algumas músicas deixam de ser apenas músicas
+                e passam a contar a nossa história. ❤️
+            </p>
+
+            <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="botao">
+                ▶️ Ouvir nossa música
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MOTIVOS -->
+
+    <section>
+
+        <h2>💕 10 motivos pelos quais eu te amo</h2>
+
+        <div class="motivos">
+
+            <div class="motivo">❤️ Pelo seu sorriso</div>
+
+            <div class="motivo">🥰 Pelo seu jeito de ser</div>
+
+            <div class="motivo">😂 Porque você me faz rir</div>
+
+            <div class="motivo">🤗 Porque seu abraço é meu lugar favorito</div>
+
+            <div class="motivo">💖 Porque você me entende</div>
+
+            <div class="motivo">✨ Porque você torna meus dias melhores</div>
+
+            <div class="motivo">😍 Porque eu amo olhar para você</div>
+
+            <div class="motivo">🌹 Porque você é especial para mim</div>
+
+            <div class="motivo">💑 Porque eu amo estar ao seu lado</div>
+
+            <div class="motivo">❤️ E simplesmente porque eu te amo</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SURPRESA -->
+
+    <section>
+
+        <h2>🎁 Tem mais uma coisa...</h2>
+
+        <p>
+            Mas você precisa apertar o botão.
+        </p>
+
+        <button class="botao" onclick="mostrarSurpresa()">
+            Abrir surpresa ❤️
+        </button>
+
+        <div id="surpresa">
+            Eu escolheria você novamente em todas as vidas. ❤️🥹
+            <br><br>
+            Te amo!
+        </div>
+
+    </section>
+
+
+    <footer>
+        Feito com ❤️ especialmente para você.
+    </footer>
+
+
+    <script>
+
+        /* =========================
+           CONTADOR
+        ========================= */
+
+        // COLOQUE A DATA EM QUE VOCÊS COMEÇARAM
+        const dataInicio = new Date("2025-01-01T00:00:00");
+
+        function atualizarContador() {
+
+            const agora = new Date();
+
+            const diferenca = agora - dataInicio;
+
+            const segundosTotais = Math.floor(diferenca / 1000);
+
+            const dias = Math.floor(segundosTotais / 86400);
+
+            const horas = Math.floor(
+                (segundosTotais % 86400) / 3600
+            );
+
+            const minutos = Math.floor(
+                (segundosTotais % 3600) / 60
+            );
+
+            const segundos =
+                segundosTotais % 60;
+
+            document.getElementById("dias").textContent = dias;
+
+            document.getElementById("horas").textContent = horas;
+
+            document.getElementById("minutos").textContent = minutos;
+
+            document.getElementById("segundos").textContent = segundos;
+        }
+
+        setInterval(atualizarContador, 1000);
+
+        atualizarContador();
+
+
+        /* =========================
+           SURPRESA
+        ========================= */
+
+        function mostrarSurpresa() {
+
+            document.getElementById("surpresa").style.display = "block";
+
+        }
+
+
+        /* =========================
+           CORAÇÕES
+        ========================= */
+
+        function criarCoracao() {
+
+            const heart = document.createElement("div");
+
+            heart.classList.add("heart");
+
+            heart.innerHTML = "❤️";
+
+            heart.style.left =
+                Math.random() * 100 + "vw";
+
+            heart.style.animationDuration =
+                (Math.random() * 3 + 3) + "s";
+
+            heart.style.fontSize =
+                (Math.random() * 20 + 15) + "px";
+
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 6000);
+        }
+
+        setInterval(criarCoracao, 700);
+
+    </script>
+
+</body>
+</html>
